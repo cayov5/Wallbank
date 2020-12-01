@@ -1,0 +1,134 @@
+
+
+
+@media (max-width: 1420px) {
+  html {
+    font-size: 50%;
+  }
+
+}
+
+
+
+
+
+@media (max-width: 960px) {
+
+
+  footer#main-footer {
+    height: auto;
+  }
+
+  footer#main-footer .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer#main-footer .content .menu-footer {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 15px;
+    margin: 0;
+    margin-bottom: 35px;
+
+  }
+
+  footer#main-footer .content .menu-footer ul {
+    display:grid;
+  }
+  footer#main-footer .content .menu-footer li {
+    align-items: center;
+    margin: auto 15px;
+    padding: 0;
+  }
+
+  footer#main-footer .content .menu-footer li:first-child {
+    margin: auto;
+  }
+  footer#main-footer .content .widget {
+    order: 0;
+    align-items: center;
+    text-align: center;
+  }
+
+
+  footer#main-footer .content .logo-social {
+    order: 3;
+    margin-top: 25px;
+  }
+}
+
+@media (max-width: 805px) {
+
+  .address-desktop {
+    display: none;
+  }
+
+  .address-mobile {
+    display: block;
+    line-height: 0.5rem;
+  }
+
+  footer#main-footer .content .logo-social {
+    margin: 25px 0 0 0;
+  }
+
+
+ footer#main-footer .content .widget .company {
+  display: block;
+  }
+
+  footer#main-footer .content .widget .info {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  footer#main-footer .content .widget .info img {
+    padding-bottom: 15px;
+    margin:0;
+  }
+
+  footer#main-footer .content .widget .info .company p:last-child  {
+    margin:0;
+  }
+
+
+  footer#end-footer .content img {
+    margin-left: 25px;
+  }
+
+  footer#end-footer .content  {
+    margin-bottom: 25px;
+  }
+  header#main-header  {
+    height: 95px;
+  }
+  header#main-header .content {
+    flex-direction: column;
+    height: 100%;
+    padding-top: 15px;
+  }
+  header#main-header .content h1 {
+    font-size: 3rem!important;
+    margin: 0;
+  }
+
+  .sticky {
+    background-color: $esmeralda-color-gray-dark!important;
+    margin-bottom: 3rem!important;
+  }
+
+  section#preregister {
+    width: 100%;
+    background: $esmeralda-color-black url('/dist/images/bg-preregister.png') no-repeat right top / 150px;
+  & .content {
+    & .left {
+      width: 100%;
+    } & input {
+      // background: none!important;
+    }
+  }
+}}
+

@@ -1,0 +1,91 @@
+
+footer#sub-footer {
+  background-color: $esmeralda-color-gray-dark;
+  width: 100%;
+}
+
+footer#sub-footer .content {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+& h3 {
+  @include text-font1-bold($esmeralda-text-color-accent, 3.0rem, none);
+}}
+
+footer#sub-footer .content .accordions {
+    margin: 35px 0;
+
+  & .accordion-item {
+    display: flex;
+  & input{
+  display:none;
+  } & label{
+    background: none;
+    align-items: center;
+    justify-content: space-between;
+    @include text-font1-bold($esmeralda-text-color-accent, 2rem, uppercase);
+    cursor:pointer;
+    padding: 15px;
+    border-style: solid;
+    border-top: 0px;
+    border-left: 0px;
+    border-width: 1px;
+    border-right: 0px;
+    // border-bottom: 5px $esmeralda-color-accent;
+   &::after {
+    content: "\276F";
+    color: $esmeralda-text-color-accent;
+    width: 1rem;
+    height: 1rem;
+    text-align: center;
+    transition: all .35s;
+    transform: rotate(90deg)
+  }}}
+  & .accordion-content{
+    width: 350px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    // width: 350px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+   &#sac-1 {
+    background-color: $esmeralda-color-gray-dark;
+   }&#sac-2 {
+    background-color: $esmeralda-color-black;
+   }&#sac-3 {
+    background-color: $esmeralda-color-gray-dark;
+   }&#sac-4 {
+    background-color: $esmeralda-color-black;
+   }& strong {
+    @include text-font1-bold($esmeralda-color-gray, 1.8rem, none);
+    padding-right: 25px;
+   }& .sac-item {
+    @include text-font1-bold($esmeralda-text-color-white, 1.8rem, none);
+  }}
+  & [id^=accordion]:checked  {
+    & ~ .accordion-content {
+      height: 100%;
+      width: 100%;
+      opacity: 1;
+      padding: 1rem;
+      border: $esmeralda-color-gray-border solid 0.1rem;
+      border-top: none;
+    }&+label{
+      background: $esmeralda-color-black;
+      @include text-font1-bold($esmeralda-text-color-gray, 1.8rem, uppercase);
+      cursor:pointer;
+      border-style: none;
+      border: $esmeralda-color-gray-border solid 0.1rem;
+      border-bottom: none;
+    &::after {
+      transform: rotate(270deg);
+    }}}}

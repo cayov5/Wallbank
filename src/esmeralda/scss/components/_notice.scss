@@ -1,0 +1,33 @@
+section#notice {
+  background-color: $esmeralda-color-gray-dark;
+  margin-top: 25px;
+& .content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 250px 0;
+  text-align: center;
+}& h1 {
+  @include text-font1-bold($esmeralda-text-color-accent, 7rem, uppercase);
+  margin-bottom: 15px;
+}& p {
+  @include text-font2-bold($esmeralda-text-color-accent, 2rem, uppercase, normal);
+  margin-bottom: 15px;
+}& button {
+  @include text-font1-bold($esmeralda-text-color-black, 1.8rem, uppercase);
+  outline: none;
+  background:$esmeralda-color-accent;
+  border-radius: 0.4rem;
+  border-style: solid;
+  border-color: $esmeralda-color-black;
+  width: 100%;
+  height:6rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  &:hover {
+    background-color: $esmeralda-color-accent-dark;
+    border:none;
+  }}}

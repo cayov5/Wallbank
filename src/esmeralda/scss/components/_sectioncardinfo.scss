@@ -1,0 +1,41 @@
+
+section#card-info {
+  background: #fff url('/dist/images/Padronagem wallbank.svg');
+  & .content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+  & .card {
+     position: absolute;
+     right: 0px;
+     
+  } & .left {
+    padding: 150px 0;
+    display: flex;
+    flex-direction: column;
+  & h1 {
+    @include text-font1-bold($esmeralda-text-color-black, 5.0rem, none);
+    line-height: 6.3rem;
+  }& .quote {
+    position: relative;
+    margin: 35px 0;
+    border: 1.3px $esmeralda-color-accent solid;
+    padding: 25px;
+  & p {
+    @include text-font2-bold($esmeralda-text-color-black, 1.6rem, none, 300);
+  }& img {
+    position: absolute;
+    right: 15px;
+  }} & button {
+    @include text-font1-bold($esmeralda-text-color-black, 1.8rem, uppercase);
+    outline: none;
+    border: none;
+    margin-top: 15px;
+    background-color: $esmeralda-color-accent;
+    padding: 0 30px;
+    border-radius: 3px;
+    height: 60px;
+  }}}
+}
+

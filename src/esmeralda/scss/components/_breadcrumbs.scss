@@ -1,0 +1,20 @@
+section#breadcrumb .content {
+  & ul {
+    display: flex;
+    list-style: none;
+    margin-top: 25px;
+  & li {
+    @include text-font1-bold($esmeralda-color-accent, 1.5rem, uppercase);
+    margin-right: 5px;
+  &::after {
+    content: ">";
+    margin-left: 5px;
+  }&:last-child::after {
+    content: "";
+  }} & a {
+    text-decoration: none;
+    color: $esmeralda-color-accent;
+  &:hover {
+    text-decoration: underline;
+  }}}
+}

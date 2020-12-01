@@ -1,0 +1,56 @@
+@font-face {
+  font-family: 'Arturito Slab';
+  src: url('/src/esmeralda/fonts/ArturitoSlab-Bold.woff2') format('woff2'),
+      url('/src/esmeralda/fonts/ArturitoSlab-Bold.woff') format('woff'),
+      url('/src/esmeralda/fonts/ArturitoSlab-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Anodina';
+  src: url('/src/esmeralda/fonts/Anodina-Regular.woff2') format('woff2'),
+      url('/src/esmeralda/fonts/Anodina-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Anodina';
+  src: url('/src/esmeralda/fonts/Anodina-Bold.woff2') format('woff2'),
+      url('/src/esmeralda/fonts/Anodina-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Anodina';
+  src: url('/src/esmeralda/fonts/Anodina-Light.woff2') format('woff2'),
+      url('/src/esmeralda/fonts/Anodina-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Anodina Extra';
+  src: url('/src/esmeralda/fonts/Anodina-ExtraLight.woff2') format('woff2'),
+      url('/src/esmeralda/fonts/Anodina-ExtraLight.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Anodina Extra';
+  src: url('/src/esmeralda/fonts/Anodina-ExtraBold.woff2') format('woff2'),
+      url('/src/esmeralda/fonts/Anodina-ExtraBold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+

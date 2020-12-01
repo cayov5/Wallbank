@@ -1,0 +1,78 @@
+section#insurance {
+  background: #fff url('/dist/images/Padronagem wallbank.svg');
+  //background-color: #262626;
+  //background-repeat: no-repeat;
+  height: 100%;
+  
+ & .content {
+   top: 10%;
+   height: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 150px 0;
+   & .left {
+     display: flex;
+     flex-direction: column;
+   & h1 {
+    @include text-font1-bold($esmeralda-text-color-accent, 5.0rem, none);
+    line-height: 5.5rem;
+   } & p{
+    @include text-font1-bold($esmeralda-text-color-black, 1.3rem, none);
+   }
+   & .pricing {
+    border-radius: 5px;
+    position: relative;
+    margin: 35px 0;
+    border: 1.7px $esmeralda-color-accent solid;
+    padding: 40px 40px 25px 40px;
+    & .title {
+      left: 50px;
+      top: -10px;
+      padding: 0 5px;
+      position: absolute;
+      background-color: #00FF7D;
+      @include text-font1-bold($esmeralda-text-color-black, 1.5rem, none);
+    }
+    & .price {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      & h1 {
+    @include text-font1-bold($esmeralda-text-color-accent, 9.0rem, none);
+    margin-bottom: 15px;
+   }& p {
+    @include text-font1-bold($esmeralda-text-color-black, 1.3rem, none);
+   }}}}
+
+   & .right {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-gap: 50px;
+    & .item {
+      background-color: $esmeralda-color-accent;
+      display: flex;
+      flex-direction: column;
+      padding: 30px;
+      & .title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        & h4 {
+          @include text-font1-bold($esmeralda-text-color-black, 1.8rem, uppercase);
+        }
+      }
+      & .line {
+        height: 1.5px;
+        width: 100%;
+        background: $esmeralda-color-black;
+        margin: 15px 0;
+    }& p {
+      @include text-font1-bold($esmeralda-text-color-black, 1.5rem, none);
+    }&:first-child {
+      border-radius: 15px 0 0;
+    }&:last-child {
+      border-radius: 0 0 15px;
+    }}
+  }
+ }}

@@ -1,0 +1,52 @@
+// vectors
+$esmeralda-logo: url("/src/esmeralda/vectors/ica-logo.svg");
+$heart: url("/src/esmeralda/vectors/heart.svg");
+$wing: url("/src/esmeralda/vectors/wing.svg");
+$seguro: url("/src/esmeralda/vectors/seguro.svg");
+$aid: url("/src/esmeralda/vectors/aid.svg");
+$esmeralda-login-lock: url("/src/esmeralda/vectors/esmeralda-login-lock.svg");
+$esmeralda-phone-support: url("/src/esmeralda/vectors/esmeralda-phone-support.svg");
+
+.heart-icon {
+  background-image: $heart;
+  height:2.8em;
+  width: 2.8em;
+  margin-right: 1em;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+@mixin esmeraldaicon($icon,$size,$color) {
+  font-family: $esmeralda-font-arturito;
+  font-size: $size;
+  color: $color;
+  text-transform: $case;
+}
+
+.wing-icon {
+  background-image: $wing;
+  fill: red;
+  height:2.8em;
+  width: 2.8em;
+  margin-right: 1em;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.aid-icon {
+  background-image: $aid;
+  height:2.8em;
+  width: 2.8em;
+  margin-right: 1em;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.seguro-icon {
+  background-image: $seguro;
+  height:2.8em;
+  width: 2.8em;
+  margin-right: 1em;
+  background-position: right;
+  background-repeat: no-repeat;
+}

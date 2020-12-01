@@ -1,0 +1,105 @@
+
+section#conta-digital {
+  background: #fff url('/dist/images/Padronagem wallbank.svg');
+  height:1100px;
+  // background: #262626 url('/dist/images/bg-cont4.png') no-repeat left;
+  //background-size: cover;
+}
+
+
+section#conta-digital .content {
+  display:flex;
+  justify-content: space-around;
+  height: 100%;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  & img {
+   width: 50%;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(0%, -50%);
+  }
+}
+
+section#conta-digital .content .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-between;
+  position: relative;
+  width: 60%;
+& h1 {
+  @include text-font1-bold($esmeralda-text-color-accent, 6.0rem, none);
+  line-height: 6.3rem;
+  margin-bottom: 15px;
+} & .left-text {
+  @include text-font1-bold($esmeralda-text-color-black, 1.7rem, none);
+  line-height: 3rem;
+}
+}
+
+.accordions{
+  margin: 35px 0;
+
+& .accordion-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+  width: 60%;
+& input{
+display:none;
+} & label{
+  background: #262626;
+  justify-content: space-between;
+  @include text-font1-bold($esmeralda-text-color-accent, 1.7rem, none);
+  display:flex;
+  cursor:pointer;
+  padding: 15px;
+  border-style: solid;
+  border-top: 0px;
+  border-left: 0px;
+  border-width: 1px;
+  border-right: 0px;
+  // border-bottom: 5px $esmeralda-color-accent;
+ &::after {
+  content: "\276F";
+  width: 1rem;
+  height: 1rem;
+  text-align: center;
+  transition: all .35s;
+}}}
+& .accordion-content{
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  height: 0px;
+  overflow: hidden;
+  background: $esmeralda-color-accent;
+  -webkit-transition: height 0.3s ease-in-out;
+  -moz-transition: height 0.3s ease-in-out;
+  -o-transition: height 0.3s ease-in-out;
+  -ms-transition: height 0.3s ease-in-out;
+  transition: height 0.3s ease-in-out;
+ & .item {
+  @include text-font2-bold(#262626, 1.7rem, none,bold);
+  width: 80%;
+}}
+& [id^=accordion]:checked  {
+  & ~ .accordion-content {
+    height: 200px;
+  }&+label{
+    background: $esmeralda-color-accent;
+    @include text-font1-bold(#262626, 1.7rem, none);
+    cursor:pointer;
+    border-style: none;
+  &::after {
+    transform: rotate(90deg);
+}}
+}
+}
+
+
+

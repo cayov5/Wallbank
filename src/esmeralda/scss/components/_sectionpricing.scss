@@ -1,0 +1,66 @@
+
+section#pricing {
+  background-color:  100%;
+  background: #fff url('/dist/images/Padronagem wallbank.svg');
+  & .content {
+    height: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  & div {
+    border: $esmeralda-color-accent solid 1px;
+    border-radius: 5px;
+    width: 300px;
+    flex-grow: 0;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    padding: 40px;
+    margin: 55px 0;
+    margin-right: 25px;
+  & h4 {
+    @include text-font1-bold($esmeralda-text-color-accent, 2rem, uppercase);
+    margin: 15px 0;
+  } & p {
+    @include text-font2-bold($esmeralda-text-color-black, 1.6rem, none,normal);
+    text-align: center;
+    line-height: 2.5rem;
+  } & .line {
+    height: 1px;
+    width: 100%;
+    background: $esmeralda-color-accent;
+    margin: 15px 0;
+  } & button {
+    @include text-font1-bold($esmeralda-text-color-black, 1.8rem, uppercase);
+    outline: none;
+    border: none;
+    background-color: $esmeralda-color-accent;
+    margin: 25px 0;
+    padding: 0 63px;
+    border-radius: 3px;
+    height: 60px;
+    &:hover {
+      background-color: $esmeralda-color-accent-dark;
+    }} & small {
+      @include text-font2-bold($esmeralda-text-color-black, 1.3rem, none,normal);
+    } &#best  {
+      background-color: rgba(204, 204, 204, 0.5);
+      border: none;
+    & h4 {
+      color: $esmeralda-color-black;
+    }& p {
+      color: $esmeralda-color-black;
+    }& div#price {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      width: auto;
+      margin: 0;
+      margin-top: 15px;
+      text-align: right;
+      padding: 15px;
+    & h1 {
+      @include text-font1-bold($esmeralda-text-color-accent, 6.5rem, uppercase);
+    }}}}}
+}

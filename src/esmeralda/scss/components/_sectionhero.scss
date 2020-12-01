@@ -1,0 +1,98 @@
+section#hero {
+  background: #fff url('/dist/images/Padronagem wallbank.svg');
+  //height:1100px;
+  //background-size: cover;
+  //width: 100%;
+  // background: $esmeralda-color-accent url('/dist/images/hero/hero-bg01.png') no-repeat right;
+  
+}
+
+
+section#hero .content {
+  height: 100%;
+  display:flex;
+  padding-top: 35px;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 1;
+  position: relative;
+}
+
+section#hero .content #hero-image {
+  position: absolute;
+  right: 0;
+  top: -50px;
+  width: 45%;
+  z-index: 3;
+  cursor: pointer;
+}
+
+
+section#hero .content .left  {
+ display:flex;
+ flex-direction: column;
+}
+
+section#hero .content .left h1 {
+  @include text-font1-bold($esmeralda-text-color-black, 5.5rem, none);
+  line-height: 5.0rem;
+  margin-bottom: 15px;
+}
+
+section#hero .content .left p {
+  @include text-font2-bold($esmeralda-text-color-black, 1.8rem, normal, bold);
+  margin: 0;
+  line-height:2.5rem;
+}
+
+section#hero .content .item {
+  display: flex;
+  margin-top: 15px;
+}
+
+
+section#hero .content .item img {
+  width: 4.6rem;
+  height: 3.8rem;
+}
+
+section#hero .content .item .item-content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+
+}
+
+section#hero .content .item .item-content {
+
+  p {
+    @include text-font2-bold($esmeralda-color-black, 1.8rem, normal, bold);
+    margin: 5px auto;
+    width: 240px;
+    text-align: left!important;
+  }
+
+  h4 {
+    @include text-font1-bold($esmeralda-text-color-black, 2.0rem, none);
+    text-align: left!important;
+  }
+
+}
+
+section#hero .content button {
+  margin-top: 35px;
+  @include text-font1-bold($esmeralda-text-color-black, 1.8rem, uppercase);
+  outline: none;
+  background:none;
+  border-radius: 0.4rem;
+  border-style: solid;
+  border-color: $esmeralda-color-black;
+  height:50px;
+  width: 230px;
+  margin-bottom: 30px;
+  &:hover {
+    background-color: $esmeralda-color-black;
+    border:none;
+    color: $esmeralda-text-color-white;
+  }
+}

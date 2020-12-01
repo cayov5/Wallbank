@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="16px" viewBox="0 0 21 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>bullet-menu</title>
+    <defs>
+        <polygon id="path-1" points="0 0 21 0 21 16 0 16"></polygon>
+    </defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-492.000000, -53.000000)">
+            <g id="bullet-menu" transform="translate(492.000000, 53.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-2"></g>
+                <path d="M20.1570423,0.933001383 C19.6011599,0.306279391 18.911309,0 18.1022784,0 L7.64142502,0 L5.49444905,0 C4.67671914,0 3.96859983,0.306279391 3.35356255,0.933001383 L0.917771334,3.42130014 C0.301864126,4.03739972 0,4.71457815 0,5.4360166 L0,10.7171231 C0,11.5500968 0.301864126,12.2688797 0.917771334,12.8956017 L3.04908865,15.0740802 C3.66412593,15.6901798 4.37224524,16 5.18997514,16 L7.64142502,16 L8.78972659,16 C9.59788732,16 10.3147059,15.6901798 10.9227838,15.0740802 L20.0830986,6.06008299 C20.6981359,5.4360166 21,4.71457815 21,3.88426003 L21,3.11147994 C21,2.28027663 20.7216239,1.54998617 20.1570423,0.933001383" id="Fill-1" fill="#00FF7D" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

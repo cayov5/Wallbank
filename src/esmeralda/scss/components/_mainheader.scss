@@ -1,0 +1,198 @@
+
+header#main-header {
+  background-color: $esmeralda-color-black;
+  height: 85px;
+  transition: all 500ms cubic-bezier(0.55, 0, 0.1, 1);
+}
+
+header#main-header .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+header#main-header .login-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header#main-header .input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+header#main-header .login-group img {
+  margin-right: 5px;
+  height: 100%;
+}
+
+
+header#main-header .login-group .input-group input {
+  @include text-font1-bold($esmeralda-text-color-gray, 1.8rem, uppercase);
+  padding: 0  15px;
+  width: 35rem ;
+  height: 50px;
+  border-radius: 7px;
+  border-color: $esmeralda-color-gray-border;
+  background-color: $esmeralda-color-black;
+  border: solid;
+  border-width: 0.04em;
+  transition: ease-in-out, border-color .35s ease-in-out;
+  transition: ease-in-out, color .35s ease-in-out;
+    &:focus {
+      outline: none;
+      border-color: $esmeralda-color-accent;
+      color: $esmeralda-color-accent;
+    }&:placeholder-shown + .label-cpf {
+      opacity: 0;
+      visibility: hidden;
+      -webkit-transform: translateY(-4rem);
+      transform: translateY(-4rem);}
+}
+
+header#main-header .label-cpf {
+  @include text-font1-bold($esmeralda-text-color-accent, 1.8rem, uppercase);
+  margin-left: 0.3rem;
+  top: 80px;
+  position: absolute;
+  transition: all 0.3s;
+  transform: translateY(0rem);
+}
+
+header#main-header .login-group button {
+  @include text-font1-bold($esmeralda-text-color-black, 1.8rem, uppercase);
+  outline: none;
+  border: none;
+  background-color: $esmeralda-color-accent;
+  margin-left: 5px;
+  padding: 0 25px;
+  border-radius: 7px;
+  height: 50px;
+  &:hover {
+    background-color: $esmeralda-color-accent-dark;
+  }
+}
+
+
+header#main-header  button{
+  background-repeat: no-repeat;
+  background-position: -120px -150px, 0 0;
+
+  background-image: -webkit-linear-gradient(
+    top left,
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(255, 255, 255, 0.2) 37%,
+    rgba(255, 255, 255, 0.8) 45%,
+    rgba(255, 255, 255, 0.0) 50%
+  );
+  background-image: -moz-linear-gradient(
+    0 0,
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(255, 255, 255, 0.2) 37%,
+    rgba(255, 255, 255, 0.8) 45%,
+    rgba(255, 255, 255, 0.0) 50%
+  );
+  background-image: -o-linear-gradient(
+    0 0,
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(255, 255, 255, 0.2) 37%,
+    rgba(255, 255, 255, 0.8) 45%,
+    rgba(255, 255, 255, 0.0) 50%
+  );
+  background-image: linear-gradient(
+    0 0,
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(255, 255, 255, 0.2) 37%,
+    rgba(255, 255, 255, 0.8) 45%,
+    rgba(255, 255, 255, 0.0) 50%
+  );
+
+  -moz-background-size: 250% 250%, 100% 100%;
+       background-size: 250% 250%, 100% 100%;
+
+  -webkit-transition: background-position 0s ease;
+     -moz-transition: background-position 0s ease;
+       -o-transition: background-position 0s ease;
+          transition: background-position 0s ease;
+}
+
+header#main-header button:hover {
+  background-position: 0 0, 0 0;
+
+  -webkit-transition-duration: 0.5s;
+     -moz-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+header#main-header .extend-gray {
+  background-color: $esmeralda-color-gray-dark;
+  width: 35%;
+  height: 95px;
+  position: absolute;
+  left: 65%;
+}
+header#main-header .support-group {
+  display:flex;
+  align-items: center;
+  background-color: $esmeralda-color-gray-dark;
+  height: 95px;
+  // width: 500px;
+
+  border-bottom-left-radius: 3rem;
+  z-index: 1;
+}
+
+
+header#main-header .support-group img {
+  margin-right: 5px;
+  margin-left: 20px;
+}
+
+header#main-header .support-group p {
+  @include text-font1-bold($esmeralda-text-color-gray, 1.6rem, none);
+}
+
+header#main-header .support-group a {
+        text-decoration: none;
+        padding-left: 0.5em;
+        white-space: nowrap;
+        @include text-font1-bold($esmeralda-text-color-white, 1.6rem, uppercase);
+        &:hover {
+          text-decoration: underline;
+          text-decoration-color: $esmeralda-color-accent;
+        }
+}
+
+header#main-header .support-group button {
+  @include text-font1-bold($esmeralda-text-color-black, 1.6rem, uppercase);
+  outline: none;
+  border: none;
+  background-color: $esmeralda-color-accent;
+  margin-left: 5px;
+  padding: 0rem 45px;
+  border-radius: 7px;
+  height: 50px;
+  &:hover {
+    background-color: $esmeralda-color-accent-dark;
+  }
+}
+
+span#sticky-menu {
+    padding: 2.9rem 3.7rem;
+    margin-right: 5px;
+    background: url("/dist/images/vectors/wall-bullet.svg");
+    border-style: solid;
+    border-width: 1.3px;
+    border-color: $esmeralda-color-accent;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: center;
+    background-size: 40%;
+    cursor: pointer;
+   &:hover{
+     //border-color: $esmeralda-color-white;
+     background-color: rgb(255, 255, 255);
+}}

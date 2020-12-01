@@ -1,0 +1,84 @@
+
+header#sub-header {
+  background-color: $esmeralda-color-black;
+  height: 100px;
+}
+
+header#sub-header .content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+}
+
+header#sub-header ul {
+  display: flex;
+  margin-right:30px;
+  @include text-font1-bold($esmeralda-text-color-white, 1.8rem, uppercase);
+  list-style: none;
+}
+
+header#sub-header ul li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left:30px;
+  & a {
+    text-decoration: none;
+    color: $esmeralda-text-color-white;
+  }&:after {
+    content: '';
+    width: 10px;
+    height: 7.27px;
+    background: url("/src/esmeralda/vectors/wall-bullet.svg") no-repeat;
+    margin-left: 6px;
+    position: relative;
+    opacity: 0;
+    left: -20px;
+    -webkit-transition: all 250ms;
+    transition: all 250ms;
+  }&:hover:after{
+    opacity: 1;
+    left: 0px;
+    -webkit-transition: all 550ms;
+    transition: all 550ms;
+  }
+}
+
+header#sub-header ul li:first-child{
+  margin-left:0;
+}
+
+header#sub-header ul li.active::after{
+ content: '';
+ left: 0px;
+ opacity: 1;
+ width: 10px;
+ height: 7.27px;
+ background: url("/src/esmeralda/vectors/wall-bullet.svg") no-repeat;
+ margin-left: 6px;
+animation-name: fadeIn;
+animation-duration: 220ms;
+}
+
+header#sub-header input {
+  @include text-font1-bold($esmeralda-text-color-gray, 1.2rem, uppercase);
+
+  border-radius: 4px;
+  padding: 0 40px 0 15px;
+  height: 35px;
+  width: 320px;
+  border-color: $esmeralda-color-gray-border;
+  background: $esmeralda-color-black url("/src/esmeralda/vectors/search.svg") no-repeat 290px center;
+  border: solid;
+  border-width: 1px;
+  transition: ease-in-out, border-color .35s ease-in-out;
+  transition: ease-in-out, background .15s ease-in-out;
+  transition: ease-in-out, color .35s ease-in-out;
+    &:focus {
+      outline: none;
+      border-color: $esmeralda-color-accent;
+      color: $esmeralda-color-accent;
+      background: $esmeralda-color-black url("/src/esmeralda/vectors/search-active.svg") no-repeat 290px center;
+    }
+}

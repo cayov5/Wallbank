@@ -1,0 +1,81 @@
+
+
+//fonts
+$esmeralda-font-arturito: "Arturito Slab";
+$esmeralda-font-anodina: "Anodina";
+
+$z-index: (
+  modal              : 9999991500,
+  header             : 100,
+  subheader          : 95,
+  footer             : 90,
+);
+
+//Mixins
+  // Font 01: Arturito Bold
+  // Font 02: Anodina
+
+@mixin text-font1-bold($color,$size,$case) {
+  font-family: $esmeralda-font-arturito;
+  font-size: $size;
+  color: $color;
+  text-transform: $case;
+}
+
+@mixin text-font2-bold($color,$size,$case,$weight) {
+  font-family: $esmeralda-font-anodina;
+  font-weight: $weight;
+  font-size: $size;
+  color: $color;
+  text-transform: $case;
+}
+
+@function z-index($key) {
+  @return map-get($z-index, $key);
+}
+
+@mixin z-index($key) {
+  z-index: z-index($key);
+}
+
+
+
+.address-mobile {
+  display: none;
+  line-height: 3px;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+.dropdown {
+  background: url("/src/esmeralda/vectors/dropdown.svg");
+  height: 10px;
+  width: 18px;
+}
+
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  @include z-index(header);
+  transition: all 500ms ease;
+}
+
+.sticky-sub {
+  position: fixed;
+  top: -100px;
+  width: 100%;
+  animation: stickyHide 500ms 1;
+}
+
+.show {
+  position: fixed;
+  top: 85px;
+  width: 100%;
+  animation: stickyShow 300ms 1;
+  @include z-index(subheader);
+}
+

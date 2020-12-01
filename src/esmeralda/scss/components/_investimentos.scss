@@ -1,0 +1,59 @@
+section#investimentos {
+  //background-color: #262626;
+  background: #fff url('/dist/images/Padronagem wallbank.svg');
+  height: 100%;
+  width: 100%;
+  padding-top: 100px;
+  .content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .left {
+        width: 60%;
+        margin-right: 150px;
+        .line-gradient {
+          margin: 15px 0;
+          background: rgb(0,215,87);
+background: linear-gradient(67deg, rgba(0,215,87,1) 0%, rgba(132,250,183,0) 100%);
+          height: 5px;
+          width: 100%;
+        }
+        h1 {
+          @include text-font1-bold($esmeralda-text-color-black, 4rem, none);
+          span.accent {
+            color: $esmeralda-text-color-accent;
+          }
+        }
+        h2 {
+          margin: 30px 0;
+          @include text-font1-bold($esmeralda-text-color-black, 3rem, none);
+        }
+        p {
+          @include text-font2-bold($esmeralda-text-color-black, 1.9rem, none,400);
+        }
+      }
+      .right {
+        width: 70%;
+        img {
+
+          width: 100%;
+          object-fit: contain;
+        }
+      }
+    }
+    a.saiba-mais {
+
+      padding: 15px 30px;
+      background-color: $esmeralda-color-accent;
+      text-decoration: none;
+      @include text-font1-bold($esmeralda-text-color-black, 1.9rem, none);
+      margin: 70px 0;
+    }
+  }
+
+}

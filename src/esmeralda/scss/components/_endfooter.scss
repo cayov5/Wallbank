@@ -1,0 +1,29 @@
+footer#end-footer {
+  height: 80px;
+  & .content {
+    display:flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  } & small {
+    @include text-font1-bold($esmeralda-text-color-gray,1rem, none);
+    color: #5E5E5E;
+  } & a {
+    text-decoration: none;
+    color: $esmeralda-color-accent;
+  }
+}
+
+section#before-end-footer .content {
+  display:flex;
+  margin: 25px auto;
+  & .line {
+    height: 1px;
+    width: 100%;
+    background: $esmeralda-color-gray-border;
+    top: -20px;
+    opacity: 35%;
+  }
+}
+
+

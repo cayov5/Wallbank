@@ -1,0 +1,73 @@
+section#icapay {
+  background: #fff url('/dist/images/Padronagem wallbank.svg');
+  width: 100%;
+  .content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .top {
+      display: flex;
+      align-items: center;
+      .left {
+        width: 70%;
+        h1 {
+          @include text-font1-bold($esmeralda-color-accent, 4rem, none);
+          
+        }
+        p {
+          @include text-font2-bold($esmeralda-text-color-black, 1.9rem, none,400);
+          span.accent{ color: #00FF7D;}
+        }
+      }
+      .right {
+        width: 100%;
+        img {
+          width: 40%;
+          margin-left: 30%;
+          // object-fit: contain;
+        }
+      }
+    }
+    .items {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: minmax(20px, 150px);
+      gap: 0px 22px;
+      .item {
+        padding: 15px;
+        border: 1px solid #00FF7D;
+        .bubble {
+          background: rgb(115,201,236);
+          background: linear-gradient(139deg, rgba(115,201,236,1) 0%, rgba(3,167,227,1) 100%);
+          border-radius: 50%;
+          padding: 20px;
+          margin-right: 15px;
+        }
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        p {
+          @include text-font2-bold($esmeralda-text-color-black, 2.3rem, none,800);
+        }
+        img {
+          object-fit: contain;
+          width: 40px;
+          height: 40px;
+        }
+      }
+    }
+
+    a.saiba-mais {
+
+      padding: 15px 60px;
+      background: rgb(115,201,236);
+      background: linear-gradient(139deg, rgba(115,201,236,1) 0%, rgba(3,167,227,1) 100%);
+      text-decoration: none;
+      @include text-font1-bold(#1B2E3B, 1.9rem, none);
+      margin: 70px 0;
+    }
+
+
+  }
+}

@@ -1,0 +1,228 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+html {
+  // 1rem ~ 10px
+  font-size: 62.5%;
+}
+
+
+@import "../resources/fonts";
+@import "../resources/colors";
+@import "../resources/variables";
+@import "../resources/animations";
+
+body {
+  height: 100vh;
+  background-color: $esmeralda-color-black;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+  font-size: 1.6rem;
+}
+
+
+.content {
+  max-width: 1440px;
+  width: 90%;
+  margin: auto;
+  padding: 0 30px;
+}
+
+
+
+// Header
+
+@import "../components/header";
+
+header#main-header .content h1 {
+  @include text-font1-bold($esmeralda-text-color-accent, 5rem, uppercase);
+}
+
+.sticky-header {
+  margin-top: 90px;
+}
+
+/*! Default Style for Esmeralda/ICA BANK
+ * Copyright 2020 (C) AQUARELA */
+
+
+
+@import "../components/breadcrumbs";
+
+section#preregister .content .left .alert-already {
+  @include text-font1-bold($esmeralda-text-color-black, 2rem, none);
+  background-color: yellow;
+  border-radius: 7px;
+  animation: shake 0.5s;
+}
+
+section#preregister .content .left .alert-already p {
+  @include text-font1-bold($esmeralda-text-color-black, 2rem, none);
+  padding: 15px;
+}
+
+section#preregister {
+  //width: 100%;
+  background: #fff url('/dist/images/Padronagem wallbank.svg');
+
+
+& .content {
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    align-content: center;
+    position: relative;
+  & .left {
+    width: 55rem;
+    margin-bottom: 5em;
+  }
+  & h4 {
+   @include text-font1-bold($esmeralda-text-color-accent,3rem, uppercase);
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }& p{
+    @include text-font1-bold($esmeralda-text-color-black,1.6rem, none);
+    margin-bottom: 5rem;
+  }& small {
+    @include text-font1-bold($esmeralda-text-color-black,1.2rem, uppercase);
+  }& form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+  & input {
+    @include text-font1-bold($esmeralda-text-color-black, 1.8rem, none);
+    padding: 0  15px;
+    width: 100% ;
+    height: 50px;
+    background-color: rgba($color: $esmeralda-color-black, $alpha: 0.3);
+    border: solid;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-width: 0.04em;
+    border-color: $esmeralda-color-gray-border;
+    margin-bottom: 20px;
+    transition: ease-in-out, border-color .35s ease-in-out;
+    transition: ease-in-out, color .35s ease-in-out;
+      &:focus {
+        outline: none;
+        border-color: $esmeralda-color-accent;
+      }&:placeholder-shown + label {
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transform: translateY(-4rem);
+        transform: translateY(-4rem);}
+  }& label {
+    @include text-font1-bold($esmeralda-text-color-gray, 1.8rem, none);
+    margin-left: 0.3rem;
+    transition: all 0.3s;
+    transform: translateY(0rem);
+  }& button {
+    @include text-font1-bold($esmeralda-text-color-black, 1.8rem, uppercase);
+    outline: none;
+    background:$esmeralda-color-accent;
+    border-radius: 0.4rem;
+    border-style: solid;
+    border-color: $esmeralda-color-black;
+    height:6rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    &:hover {
+      background-color: $esmeralda-color-accent-dark;
+      border:none;
+    }
+  }& select {
+    @include text-font1-bold($esmeralda-text-color-black, 1.8rem, none);
+    padding: 0  10px;
+    width: 100% ;
+    height: 50px;
+    background: url(/dist/images/vectors/dropdown.svg) no-repeat right rgba($color: $esmeralda-text-color-gray, $alpha: 0.3);
+    border: solid;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-width: 0.04em;
+    margin-bottom: 20px;
+    outline: none;
+    border-color: $esmeralda-color-gray-border;
+    transition: ease-in-out, border-color .35s ease-in-out;
+    transition: ease-in-out, color .35s ease-in-out;
+    -webkit-padding-end: 20px;
+    -moz-padding-end: 20px;
+      &:focus {
+        outline: none;
+        border-color: $esmeralda-color-accent;
+        background: url(/dist/images/vectors/dropdown.svg) no-repeat right rgba($color: $esmeralda-color-white, $alpha: 1);
+      }&:valid + label {
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transform: translateY(-4rem);
+        transform: translateY(-4rem);}
+  }& select label {
+    @include text-font1-bold($esmeralda-text-color-gray, 1.8rem, none);
+    margin-left: 0.3rem;
+    transition: all 0.3s;
+    transform: translateY(0rem);}}}}
+
+
+
+
+    section#done {
+      width: 100%;
+      background: $esmeralda-color-accent;
+    & .content {
+        padding: 50px 0;
+        height: 100%;
+        display:flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        position: relative;
+        text-align: center;
+      & h4 {
+        padding: 20px 0;
+       @include text-font1-bold($esmeralda-text-color-black,3rem, uppercase);
+      }& p{
+        @include text-font1-bold($esmeralda-text-color-black,2rem, none);
+        padding: 5px 0;
+      }& small {
+        @include text-font1-bold($esmeralda-text-color-black,1.2rem, uppercase);
+      }}}
+
+
+
+section#done .content button {
+  margin-top: 35px;
+  @include text-font1-bold($esmeralda-text-color-black, 1.8rem, uppercase);
+  outline: none;
+  background:none;
+  border-radius: 0.4rem;
+  border-style: solid;
+  border-color: $esmeralda-color-black;
+  height:50px;
+  width: 230px;
+  margin-bottom: 30px;
+  &:hover {
+    background-color: $esmeralda-color-black;
+    border:none;
+    color: $esmeralda-text-color-white;
+  }
+}
+// Footer
+
+@import "../components/subfooter";
+@import "../components/mainfooter";
+@import "../components/endfooter";
+
+
+
+// Responsive
+@import "../resources/preregister-responsive";
+
