@@ -5,7 +5,7 @@
   }
 
   section#hero   {
-    background: $esmeralda-color-accent;
+    background: #fff url('/dist/images/Padronagem wallbank.svg');
   }
 
   footer#sub-footer .content ul li {
@@ -40,8 +40,10 @@
   }
 
   section#products {
-    background-image: url('/dist/images/bg-products-mob.png');
+    top:30%;
+    background: #fff url('/dist/images/Padronagem wallbank.svg');
     & .content {
+      padding-top: 30%;
     flex-direction: column;
     align-content: space-between;
     justify-content: space-between;
@@ -50,6 +52,7 @@
     padding: 30px 0;
     .left {
       margin: 15px 0;
+      margin-top: 250%;
     }
     .middle {
       margin: 15px 0;
@@ -60,6 +63,7 @@
   }}
 
   section#insurance .content {
+    
     flex-direction: column;
     & .left {
       align-items: center;
@@ -339,7 +343,7 @@ section#insurance .content .right {
 .one,
 .two,
 .three {
-    background-color:$esmeralda-color-accent;
+  background: #fff url('/dist/images/Padronagem wallbank.svg');
     height: 5px;
     width: 100%;
     margin: 6px auto;

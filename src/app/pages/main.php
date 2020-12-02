@@ -37,10 +37,11 @@
                 </div>
               </div>
 
-            <a href="./components/precadastro"><button>facilite sua vida já</button></a>
+            <a href="./campanhas/precadastro"><button>facilite sua vida já</button></a>
 
         </div>
         <div id="hero-image"></div>
+        
         <!-- <img id="hero-image" src="/dist/images/hero/hero-image.png" alt="hero image"/> -->
       </div>
     </section>
@@ -85,7 +86,7 @@
         sacar em qualquer lugar do planeta</p>
         <img src="/dist/images/site/ica-quote.svg" alt="quote">
         </div>
-        <a href="https://go.wallbank.com.br/pre-cadastro"><button>simplifique sua vida, peça já o seu cartão</button></a>
+        <a href="https://wallbank.com.br/campanhas/precadastro"><button>simplifique sua vida, peça já o seu cartão</button></a>
       </div>
       <img src="/dist/images/wallcard2.svg" class="card"alt="card">
       </div>
@@ -191,7 +192,7 @@
           <p>Recarga de Celular e pagamento de contas APP Android e IOS</p>
           <span class="line"></span>
           <p>Transfira direto para a sua conta WALL Bank*</p>
-          <a href="https://go.wallbank.com.br/pre-cadastro"><button>ADQUIRIR</button></a>
+          <a href="https://wallbank.com.br/campanhas/precadastro"><button>ADQUIRIR</button></a>
           <small>Consulte o regulamento.</small>
         </div>
         <div id="best">
@@ -206,7 +207,7 @@
             <h1>R$ 15</h1>
             <small>/Por cartão emitido</small>
           </div>
-          <a href="https://go.wallbank.com.br/pre-cadastro"><button>ADQUIRIR</button></a>
+          <a href="https://wallbank.com.br/campanhas/precadastro"><button>ADQUIRIR</button></a>
           <small>Consulte o regulamento.</small>
         </div>
         <div>
@@ -215,7 +216,7 @@
           <p>Bandeiras Visa, Mastercard, Elo, Amex e Hipercard</p>
           <p>Tarifas à partir de 1,20% no débito e 1,80% no crédito</p>
           <span class="line"></span>
-          <a href="https://go.wallbank.com.br/pre-cadastro"><button>ADQUIRIR</button></a>
+          <a href="https://wallbank.com.br/campanhas/precadastro"><button>ADQUIRIR</button></a>
           <small>Consulte o regulamento.</small>
         </div>
       </div>

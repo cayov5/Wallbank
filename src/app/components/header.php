@@ -31,7 +31,7 @@
           <img src="/dist/images/vectors/phone-support.svg"/>
           <p>Suporte</p>
           <a href="tel:08005803634">0800 297 0377</a>
-          <a href="https://go.wallbank.com.br/pre-cadastro"><button id="btn-join">Abra sua Conta</button></a>
+          <a href="https://wallbank.com.br/campanhas/precadastro"><button id="btn-join">Abra sua Conta</button></a>
           <span style="display: none" id="sticky-menu"></span>
         </div>
         <div class="extend-gray"></div>

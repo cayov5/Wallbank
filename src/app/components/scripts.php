@@ -13,7 +13,7 @@ switch ($url[0]) {
   case '/empresas':
     echo "<script async src=\"/dist/js/empresas.js?".$config['file-version']."\"></script>";
   break;
-  case '/pre-cadastro':
+  case '/precadastro':
     echo "<script async src=\"/dist/js/preregister.functions.js?".$config['file-version']."\"></script>";
   break;
   default:

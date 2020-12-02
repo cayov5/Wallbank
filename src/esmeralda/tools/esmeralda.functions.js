@@ -117,7 +117,7 @@ if (window.matchMedia("(max-width: 960px)").matches) {
     renderer: 'svg',
     loop: false,
     autoplay: true,
-    path: '/dist/animations/ica-card.json' // the path to the animation json
+    path: '/dist/animations/ica-card1.json' // the path to the animation json
     });
     heroImage.addEventListener("click", () => {
       anim.goToAndPlay(0);
@@ -152,7 +152,7 @@ async function goAccountMail(data) {
   goToLogin = setInterval(() => {
     document.body.style.opacity = 0
     clearInterval(goToLogin)
-    window.location.href = 'https://go.wallbank.com.br/pre-cadastro/?redir='+data
+    window.location.href = 'https://wallbank.com.br/campanhas/precadastro/?redir='+data
   },3500)
  }
 
@@ -164,6 +164,6 @@ async function goAccountMail(data) {
   goToLogin = setInterval(() => {
     document.body.style.opacity = 0
     clearInterval(goToLogin)
-    window.location.href = 'https://go.wallbank.com.br/pre-cadastro'
+    window.location.href = 'https://wallbank.com.br/campanhas/precadastro'
   },3500)
  }
